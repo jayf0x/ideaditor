@@ -1,0 +1,68 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Default desktop capability",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    {
+      "identifier": "fs:allow-read-dir",
+      "allow": [
+        {
+          "path": "$HOME/Documents/Obsidian"
+        },
+        {
+          "path": "$HOME/Documents/Obsidian/*"
+        },
+        {
+          "path": "$HOME/Documents/Obsidian/**/*"
+        }
+      ]
+    },
+    {
+      "identifier": "fs:allow-read-text-file",
+      "allow": [
+        {
+          "path": "$HOME/Documents/Obsidian/*"
+        },
+        {
+          "path": "$HOME/Documents/Obsidian/**/*.md"
+        }
+      ]
+    },
+    {
+      "identifier": "fs:allow-write-text-file",
+      "allow": [
+        {
+          "path": "$HOME/Documents/Obsidian/*"
+        },
+        {
+          "path": "$HOME/Documents/Obsidian/**/*.md"
+        }
+      ]
+    },
+    {
+      "identifier": "fs:allow-create",
+      "allow": [
+        {
+          "path": "$HOME/Documents/Obsidian/*"
+        },
+        {
+          "path": "$HOME/Documents/Obsidian/**/*.md"
+        }
+      ]
+    },
+    {
+      "identifier": "fs:allow-remove",
+      "allow": [
+        {
+          "path": "$HOME/Documents/Obsidian/*"
+        },
+        {
+          "path": "$HOME/Documents/Obsidian/**/*.md"
+        }
+      ]
+    }
+  ],
+  "platforms": ["macOS"]
+}

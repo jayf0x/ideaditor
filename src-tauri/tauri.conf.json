@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Ideator",
+  "version": "0.1.0",
+  "identifier": "com.me.ideasindex",
+  "build": {
+    "beforeDevCommand": "bun run vite dev --host",
+    "beforeBuildCommand": "bun run vite build",
+    "devUrl": "http://localhost:5173",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Ideator",
+        "width": 1200,
+        "height": 900,
+        "minWidth": 900,
+        "minHeight": 700,
+        "resizable": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": []
+  }
+}
