@@ -1,4 +1,4 @@
-# Ideator (WIP)
+# Ideator
 
 <img src="src/logo.png" style="width: 30%"/>
 
